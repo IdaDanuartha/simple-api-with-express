@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "vercel dev",
-    "test": "jest -i"
+    "test": "jest -i",
+    "install": "npm i"
   },
   "engines": {
     "node": "20.x"
