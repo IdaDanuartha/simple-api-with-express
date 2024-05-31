@@ -11,7 +11,7 @@ const {
   getUserProfile,
   updateUserProfile,
   likeOrDislike,
-} = require("../controllers");
+} = require("../controllers/index.js");
 const route = express.Router();
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
