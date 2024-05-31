@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Intel\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+  C:\Program Files\nodejs\node.exe C:\Users\Intel\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
 
 PATH: 
   C:\Users\Intel\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Intel\bin;C:\Program Files\Zulu\zulu-8\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\php\php-8.2.14;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\Gradle\gradle-6.6\bin;C:\Users\Intel\AppData\Local\Pub\Cache\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs;C:\Program Files\PuTTY;C:\ProgramData\chocolatey\bin;C:\Users\Intel\scoop\shims;C:\Users\Intel\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Intel\AppData\Local\Programs\Python\Python311;C:\Users\Intel\AppData\Local\Microsoft\WindowsApps;C:\Users\Intel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Intel\AppData\Roaming\Composer\vendor\bin;C:\src\flutter\bin;C:\laragon\bin\mysql\mysql-5.7.33-winx64\bin;C:\Program Files\heroku\bin;C:\Program Files\php\php-8.2.14;C:\MinGW\bin;E:\Apps\CLion 2023.2\bin;C:\Users\Intel\go\bin;C:\Users\Intel\AppData\Roaming\npm;H:\Apps\WebStorm 2023.3.2\bin;C:\tools\dart-sdk\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -46,7 +46,8 @@ npm manifest:
     ],
     "dependencies": {
       "express": "^4.19.2",
-      "helmet": "^7.1.0"
+      "helmet": "^7.1.0",
+      "yarn": "^1.22.22"
     },
     "devDependencies": {
       "@types/jest": "^29.5.12",
@@ -2790,6 +2791,11 @@ Lockfile:
       string-width "^4.2.3"
       y18n "^5.0.5"
       yargs-parser "^21.1.1"
+  
+  yarn@^1.22.22:
+    version "1.22.22"
+    resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz"
+    integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
   
   yocto-queue@^0.1.0:
     version "0.1.0"
