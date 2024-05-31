@@ -3,7 +3,7 @@
   "version": "0.6.0",
   "description": "express vercel boilerplate",
   "main": "app.js",
-  "author": "Kizito Akhilome <kizito@akhilo.me>",
+  "author": "Ida Danuartha",
   "license": "MIT",
   "scripts": {
     "start": "vercel dev",
