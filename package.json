@@ -18,7 +18,8 @@
   ],
   "dependencies": {
     "express": "^4.19.2",
-    "helmet": "^7.1.0"
+    "helmet": "^7.1.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
