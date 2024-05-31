@@ -1,16 +1,17 @@
-const express = require('express');
-const helmet = require('helmet');
-const { ErrorResponseObject } = require('./common/http');
-const routes = require('./routes');
+require('dotenv').config();
 
+const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+const port = 8001;
 
-app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ extended: true, limit: '50mb' }));
-app.use(helmet());
-app.use('/', routes);
+const routes = require("./routes");
 
-// default catch all handler
-app.all('*', (req, res) => res.status(404).json(new ErrorResponseObject('route not defined')));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-module.exports = app;
+app.use(routes);
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
