@@ -1,50 +1,11 @@
-const express = require("express");
-const {
-  getAllBooks,
-  createBook,
-  getOneBookById,
-  deleteBookById,
-  register,
-  login,
-  updateBookById,
-  createUserProfile,
-  getUserProfile,
-  updateUserProfile,
-  likeOrDislike,
-} = require("../controllers");
-const route = express.Router();
-require("dotenv").config();
-const jwt = require("jsonwebtoken");
+const { Router } = require('express');
+const { SuccessResponseObject } = require('../common/http');
+const demo = require('./demo.route');
 
-route.post("/register", register);
-route.post("/login", login);
+const r = Router();
 
-route.use((req, res, next) => {
-  const authHeader = req.headers["token"];
-  const token = authHeader;
+r.use('/demo', demo);
 
-  if (token == null) {
-    return res.status(401).json({ error: "Token tidak ada, akses ditolak" });
-  }
-  const verifryToken = jwt.verify(token, process.env.JWT_SECRET);
-  if (!verifryToken) {
-    return res.status(403).json({ error: "Token tidak valid" });
-  } else {
-    req.user = verifryToken;
-    next();
-  }
-});
+r.get('/', (req, res) => res.json(new SuccessResponseObject('express vercel boiler plate')));
 
-route.get("/books", getAllBooks);
-route.post("/books/menambah", createBook);
-route.put("/book/:id/edit", updateBookById);
-route.get("/book/:id", getOneBookById);
-route.delete("/book/:id", deleteBookById);
-
-route.post("/profile", createUserProfile);
-route.get("/profile", getUserProfile);
-route.put("/profile", updateUserProfile);
-
-route.post("/like/:bookId", likeOrDislike);
-
-module.exports = route;
+module.exports = r;
